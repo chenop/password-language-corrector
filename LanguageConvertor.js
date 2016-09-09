@@ -10,7 +10,7 @@ var LanguageConvertor = (function () {
         return c;
     };
     LanguageConvertor.prototype.isExist = function (c) {
-        return this._map.hasOwnProperty(c);
+        return this._map.hasOwnProperty(c); // comment
     };
     return LanguageConvertor;
 })();

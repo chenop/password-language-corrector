@@ -16,6 +16,6 @@ class LanguageConvertor {
     }
 
     public isExist(c: string) {
-        return this._map.hasOwnProperty(c);
+        return this._map.hasOwnProperty(c); // comment
     }
 }
