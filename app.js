@@ -27,7 +27,6 @@ function fixLanguage(event) {
 	if (languageConvertor.isExist(event.key)) {
 		event.preventDefault();
 		var convertedKey = languageConvertor.tryConvert(event.key);
-
 		appendKey.call(this, convertedKey);
 		showTooltip.call(this);
 	}
