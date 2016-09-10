@@ -5,7 +5,7 @@ $("input:password").keypress(fixLanguage);
 
 function showTooltip() {
 	$(this).qtip({ // Grab some elements to apply the tooltip to
-		content: 'Coverting to english!',
+		content: '<img src="https://cdn2.iconfinder.com/data/icons/blue-rounded-set/154/password-pin-code-pass-access-32.png"/>Coverting to english!',
 		show: true,
 		position: {
 			my: 'top center',  // Position my top left...
@@ -13,7 +13,7 @@ function showTooltip() {
 			target: $(this) // my target
 		},
 		style: {
-			classes: 'qtip-blue',
+			classes: 'my-tooltip',
 		}
 	})
 }

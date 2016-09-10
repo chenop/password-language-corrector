@@ -44,3 +44,11 @@ input[type="password"] { margin: 100px 0 0 200px; }
     border-color: #666 transparent;
     border-width: 0 10px 10px;
 }
+.my-tooltip {
+    border-color: #329dcb;
+    background-color: #ddd;
+}
+
+.my-tooltip .qtip-content{
+    font-size: 14px;
+}
