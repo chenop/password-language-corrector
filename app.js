@@ -8,6 +8,19 @@ function fixLanguage(event) {
 		event.preventDefault();
 		var convertedKey = languageConvertor.tryConvert(event.key);
 		$(this).val($(this).val() + convertedKey);
-		console.log(convertedKey);
+		$(this).qtip({ // Grab some elements to apply the tooltip to
+			content:  'Coverting to english!',
+			show: true,
+			position: {
+				my: 'top center',  // Position my top left...
+				at: 'bottom center', // at the bottom right of...
+				target: $(this) // my target
+			},
+			style: {
+				classes: 'qtip-blue',
+			}
+		})
+		//console.log(convertedKey);
 	}
+	$(this).qtip("hide");
 }

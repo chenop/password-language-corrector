@@ -1,5 +1,6 @@
-(function () {
-	maps = maps || {};
+var maps = maps || {};
+
+(function (maps) {
 
 	maps["he_en"] = {
 		"/": "q"
@@ -36,4 +37,4 @@
 		, "ץ": "."
 		, ".": "/"
 	}
-})();
+})(maps);

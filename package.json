@@ -1,12 +1,15 @@
 {
-	"name": "password-language-corrector",
-	"author": "Chen Oppenhaim",
-	"version": "1.0.0",
-	"description": "This extension will fix you password language",
-	"main": "background.js",
-	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1"
-	},
-	"author": "",
-	"license": "ISC"
+  "name": "password-language-corrector",
+  "author": "",
+  "version": "1.0.0",
+  "description": "This extension will fix you password language",
+  "main": "background.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "jquery": "^3.1.0",
+    "qtip2": "^3.0.3"
+  }
 }
