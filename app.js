@@ -1,7 +1,7 @@
 var map = LanguageMapProvider.getMap("he_en");
 var languageConvertor = new LanguageConvertor("he_en", map);
 
-$("input").keypress(fixLanguage);
+$("input:password").keypress(fixLanguage);
 
 function showTooltip() {
 	$(this).qtip({ // Grab some elements to apply the tooltip to
