@@ -6,7 +6,7 @@ var LanguageMapProvider = (function () {
     }
     LanguageMapProvider.getMap = function (language) {
         if (!LanguageMapProvider._maps.hasOwnProperty(language)) {
-            // TODO get langugae by http request
+            // TODO get langugae by http request (not sure it is really needed)
             throw "no such language ${language}";
         }
         return LanguageMapProvider._maps[language];
