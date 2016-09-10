@@ -1,21 +1,29 @@
-var map = LanguageMapProvider.getMap("he_en");
-var languageConvertor = new LanguageConvertor("he_en", map);
+var languageConvertor = createLanguageConvertor();
 
-$("input:password").keypress(fixLanguage);
+function createLanguageConvertor() {
+	var map = LanguageMapProvider.getMap("he_en");
+	var languageConvertor = new LanguageConvertor("he_en", map);
 
-function showTooltip() {
-	$(this).qtip({ // Grab some elements to apply the tooltip to
+	var inputs = $("input:password");
+	inputs.keypress(fixLanguage);
+
+	inputs.qtip({ // Grab some elements to apply the tooltip to
 		content: '<div><img style="vertical-align:middle" src="https://cdn2.iconfinder.com/data/icons/blue-rounded-set/154/password-pin-code-pass-access-32.png"><span style="padding-left: 10px">Coverting to english!</span></div>',
-		show: true,
+		show: false,
 		position: {
 			my: 'top center',  // Position my top left...
 			at: 'bottom center', // at the bottom right of...
-			target: $(this) // my target
+			target: inputs // my target
 		},
 		style: {
 			classes: 'my-tooltip',
 		}
-	})
+	});
+	return languageConvertor;
+}
+
+function showTooltip() {
+	$(this).qtip("show");
 }
 function hideTooltip() {
 	$(this).qtip("hide");
@@ -30,5 +38,6 @@ function fixLanguage(event) {
 		appendKey.call(this, convertedKey);
 		showTooltip.call(this);
 	}
-	hideTooltip.call(this);
+	else
+		hideTooltip.call(this);
 }
