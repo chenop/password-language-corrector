@@ -16,7 +16,7 @@ function createLanguageConvertor() {
 			target: inputs // my target
 		},
 		style: {
-			classes: 'my-tooltip',
+			classes: 'password-language-tooltip',
 		}
 	});
 	return languageConvertor;
