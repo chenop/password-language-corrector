@@ -1,4 +1,4 @@
-This extension will fix your password language while typing.
+This [extension](https://chrome.google.com/webstore/detail/password-language-correct/nmliapbkjijnndfpabfnplnknkennnin) will fix your password language while typing.
 
 How many times you have started to write your password, got rejected just to find out that you are using the wrong language?
 
