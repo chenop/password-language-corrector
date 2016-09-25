@@ -4,6 +4,11 @@
  "browser_action" field in manifest.json contains the "default_popup" key with
  value "index.html".
  -->
+<script>
+    debugger;
+    var manifest = chrome.runtime.getManifest();
+    document.getElementById('password-language-version').innerHTML = manifest.version;
+</script>
 <html ng-app="tlushim-auto">
 <head>
     <title>Password Language Corrector</title>
@@ -14,7 +19,7 @@
 
 </head>
 <body>
-<h3>Password Language Corrector</h3>
+<h3>Password Language Corrector</h3>version <h4 id="password-language-version"></h4>
 
 <div id="password-language-main">
     Found a bug? open issue <a href="https://github.com/chenop/password-language-corrector/issues/new" target="_blank">here</a>.
