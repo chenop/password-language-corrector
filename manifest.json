@@ -3,7 +3,7 @@
 
 	"name": "Password Language Corrector",
 	"description": "This extension will fix your password language while typing.",
-	"version": "1.0.1",
+	"version": "1.0.2",
 
 	"browser_action": {
 		"default_icon": "icon.png",
