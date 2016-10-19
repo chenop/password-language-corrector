@@ -3,7 +3,6 @@ class LanguageConvertor {
     private _map: any;
 
     constructor(fromLanguage:string, map: any) {
-		console.log("instantiate LanguageConvertor");
         this._fromLanguage = fromLanguage;
 
         this._map = map;
