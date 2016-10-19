@@ -1,4 +1,4 @@
-.my-tooltip {
+.password-language-tooltip {
     border-color: #329dcb;
     border-width: 4px;
     background-color: #ddd;
@@ -6,11 +6,11 @@
     font-weight: bold;
 }
 
-.my-tooltip .qtip-content{
+.password-language-tooltip .qtip-content{
     font-size: 14px;
 }
 
-#main {
+#password-language-main {
     text-overflow: ellipsis;
     overflow: hidden;
     width: 200px;
