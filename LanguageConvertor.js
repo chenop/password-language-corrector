@@ -1,6 +1,5 @@
 var LanguageConvertor = (function () {
     function LanguageConvertor(fromLanguage, map) {
-        console.log("instantiate LanguageConvertor");
         this._fromLanguage = fromLanguage;
         this._map = map;
     }
